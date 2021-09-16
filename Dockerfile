@@ -10,6 +10,7 @@ RUN apk add --update --no-cache \
     openssl-dev \
     git \
     cargo
+    
 RUN apk add --update --no-cache \
     --virtual .build-deps \
     make \
