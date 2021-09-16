@@ -8,6 +8,7 @@ RUN apk add --update --no-cache \
     musl-dev \
     libffi-dev \
     openssl-dev \
+    git \
     cargo
 RUN apk add --update --no-cache \
     --virtual .build-deps \
