@@ -10,9 +10,10 @@ RUN apk add --update --no-cache \
     openssl-dev \
     git \
     cargo \
-    vault
+    vault \
+    libcap
     
-RUN setcap cap_ipc_lock= /usr/bin/vault
+RUN setcap cap_ipc_lock= /usr/sbin/vault
 
 RUN apk add --update --no-cache \
     --virtual .build-deps \
