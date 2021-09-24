@@ -12,6 +12,8 @@ RUN apk add --update --no-cache \
     cargo \
     vault
     
+RUN setcap cap_ipc_lock= /usr/bin/vault
+
 RUN apk add --update --no-cache \
     --virtual .build-deps \
     make \
