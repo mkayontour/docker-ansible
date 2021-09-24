@@ -9,7 +9,8 @@ RUN apk add --update --no-cache \
     libffi-dev \
     openssl-dev \
     git \
-    cargo
+    cargo \
+    vault
     
 RUN apk add --update --no-cache \
     --virtual .build-deps \
